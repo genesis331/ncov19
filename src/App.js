@@ -22,14 +22,14 @@ function App() {
         for (let i = 0; i < msiadata.length; i++) {
             if (msiadata[i]) {
                 let objToPush = {
-                    name: "Day " + (i + 1),
-                    pv: parseInt(msiadata[i])
+                    day: "Day " + (i + 1),
+                    cases: parseInt(msiadata[i])
                 }
                 outputData.push(objToPush);
             } else {
                 let objToPush = {
-                    name: "Day " + (i + 1),
-                    pv: 0
+                    day: "Day " + (i + 1),
+                    cases: 0
                 }
                 outputData.push(objToPush);
             }
@@ -53,10 +53,10 @@ function App() {
                 <ResponsiveContainer>
                     <AreaChart data={msiaData}>
                         <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
+                        <XAxis dataKey="day" />
                         <YAxis />
                         <Tooltip type="monotone" />
-                        <Area type="monotone" dataKey="pv" stroke="#8884d8" fill="#8884d8" />
+                        <Area type="monotone" dataKey="cases" stroke="#8884d8" fill="#8884d8" />
                     </AreaChart>
                 </ResponsiveContainer>
             </section>

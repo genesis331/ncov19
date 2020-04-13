@@ -27,3 +27,8 @@
     width: 80%;
     display: inline-block;
 }
+
+.recharts-tooltip-wrapper {
+    text-align: left;
+    color: black !important;
+}

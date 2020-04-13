@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/ncov19/static/css/main.c1e892ff.chunk.css",
-    "main.js": "/ncov19/static/js/main.5368d5b1.chunk.js",
-    "main.js.map": "/ncov19/static/js/main.5368d5b1.chunk.js.map",
+    "main.css": "/ncov19/static/css/main.3714a02e.chunk.css",
+    "main.js": "/ncov19/static/js/main.d633af12.chunk.js",
+    "main.js.map": "/ncov19/static/js/main.d633af12.chunk.js.map",
     "runtime-main.js": "/ncov19/static/js/runtime-main.cbd8125f.js",
     "runtime-main.js.map": "/ncov19/static/js/runtime-main.cbd8125f.js.map",
-    "static/js/2.30150529.chunk.js": "/ncov19/static/js/2.30150529.chunk.js",
-    "static/js/2.30150529.chunk.js.map": "/ncov19/static/js/2.30150529.chunk.js.map",
+    "static/js/2.b7a33bb0.chunk.js": "/ncov19/static/js/2.b7a33bb0.chunk.js",
+    "static/js/2.b7a33bb0.chunk.js.map": "/ncov19/static/js/2.b7a33bb0.chunk.js.map",
     "index.html": "/ncov19/index.html",
-    "precache-manifest.25b60e8ace7a8b41037982b54540277f.js": "/ncov19/precache-manifest.25b60e8ace7a8b41037982b54540277f.js",
+    "precache-manifest.9d779f41c6e27f0782b35b045870044f.js": "/ncov19/precache-manifest.9d779f41c6e27f0782b35b045870044f.js",
     "service-worker.js": "/ncov19/service-worker.js",
-    "static/css/main.c1e892ff.chunk.css.map": "/ncov19/static/css/main.c1e892ff.chunk.css.map",
-    "static/js/2.30150529.chunk.js.LICENSE.txt": "/ncov19/static/js/2.30150529.chunk.js.LICENSE.txt",
-    "static/media/moonIcon.svg": "/ncov19/static/media/moonIcon.77f30c8e.svg"
+    "static/css/main.3714a02e.chunk.css.map": "/ncov19/static/css/main.3714a02e.chunk.css.map",
+    "static/js/2.b7a33bb0.chunk.js.LICENSE.txt": "/ncov19/static/js/2.b7a33bb0.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ncov19/static/media/VolteBold.32ec5488.otf",
+    "static/media/githubBtnIcon.svg": "/ncov19/static/media/githubBtnIcon.92c90f33.svg",
+    "static/media/githubIcon.svg": "/ncov19/static/media/githubIcon.f9bc636a.svg",
+    "static/media/tensorflowIcon.svg": "/ncov19/static/media/tensorflowIcon.65eb0388.svg",
+    "static/media/whoIcon.png": "/ncov19/static/media/whoIcon.64f74604.png",
+    "static/media/zixuLogo.svg": "/ncov19/static/media/zixuLogo.e0852cb2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cbd8125f.js",
-    "static/js/2.30150529.chunk.js",
-    "static/css/main.c1e892ff.chunk.css",
-    "static/js/main.5368d5b1.chunk.js"
+    "static/js/2.b7a33bb0.chunk.js",
+    "static/css/main.3714a02e.chunk.css",
+    "static/js/main.d633af12.chunk.js"
   ]
 }

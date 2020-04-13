@@ -60,8 +60,11 @@ function App() {
                 <div className="header-grid">
                     <div style={{'textAlign': 'left','height': '100%'}}>
                         <div className="header-contents">
-                            <img src={zixuLogo} alt="zixuLogo" draggable={false} style={{'height': '2.5rem','verticalAlign': 'middle','marginRight': '1rem'}}/>
-                            <Text h3 style={{'fontFamily': 'Volte Bold','display': 'inline-block','verticalAlign': 'middle', 'margin': '0'}}>AI Experiments</Text>
+                            <img src={zixuLogo} alt="zixuLogo" draggable={false} style={{'height': '2.8rem','verticalAlign': 'middle','marginRight': '2rem'}}/>
+                            <div style={{'display': 'inline-block','verticalAlign': 'middle'}}>
+                                <Text h4 style={{'fontFamily': 'Volte Bold', 'margin': '0'}}>AI Experiments</Text>
+                                <Text h5 style={{'margin': '0'}}>Malaysia nCoV-19 Cases Prediction</Text>
+                            </div>
                         </div>
                     </div>
                     <div style={{'textAlign': 'right','height': '100%'}}>

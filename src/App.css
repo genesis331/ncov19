@@ -1,34 +1,50 @@
 .content {
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .header {
     height: 7rem;
 }
 
-.header-grid {
+.header-grid, .footer-grid {
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.header-contents {
+.header-contents, .footer-contents {
     display: inline-block;
     position: relative;
     top: 50%;
-    transform:translateY(-50%);
-    margin: 0 3rem;
+    transform: translateY(-50%);
+    margin: 0 5rem;
 }
 
 .chart {
-    height: calc(90% - 7rem);
-    width: 80%;
+    height: calc(80% - 7rem);
+    width: 90%;
     display: inline-block;
 }
 
 .recharts-tooltip-wrapper {
     text-align: left;
     color: black !important;
+}
+
+.footer {
+    height: 20%;
+    width: 100%;
+}
+
+.footer-contents img {
+    height: 4rem;
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'Volte Bold';
+    src: url('./assets/VolteBold.otf');
 }

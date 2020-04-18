@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import csv2json from 'csvjson-csv2json';
 import { AreaChart, Area, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import { Button, Modal, Text } from '@zeit-ui/react';
 import zixuLogo from './assets/zixuLogo.svg';
@@ -17,31 +18,26 @@ function App() {
     };
     useEffect(() => {
         var request = new XMLHttpRequest();  
-        request.open("GET", "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/who_covid_19_situation_reports/who_covid_19_sit_rep_time_series/who_covid_19_sit_rep_time_series.csv", false);   
+        request.open("GET", "https://raw.githubusercontent.com/datasets/covid-19/master/data/time-series-19-covid-combined.csv", false);   
         request.send(null);  
 
-        var csvData = [];
-        var jsonObject = request.responseText.split(/\r?\n|\r/);
-        for (var i = 0; i < jsonObject.length; i++) {
-            csvData.push(jsonObject[i].split(','));
-        }
-        let msiadata = csvData[44];
-        let outputData = [];
-        msiadata.splice(0, 3);
-        for (let i = 0; i < msiadata.length; i++) {
-            if (msiadata[i]) {
-                let objToPush = {
-                    day: "Day " + (i + 1),
-                    cases: parseInt(msiadata[i])
-                }
-                outputData.push(objToPush);
-            } else {
-                let objToPush = {
-                    day: "Day " + (i + 1),
-                    cases: 0
-                }
-                outputData.push(objToPush);
+        var csvData = csv2json(request.responseText, {parseNumbers: true});;
+        let msiadata = [];
+        for (let i = 0; i < csvData.length; i++) {
+            if (csvData[i]['Country/Region'] === "Malaysia") {
+                msiadata.push(csvData[i]);
             }
+        }
+        let outputData = [];
+        for (let i = 0; i < msiadata.length; i++) {
+            let objToPush = {
+                day: "Day " + (i + 1),
+                date: msiadata[i]['Date'],
+                recovered: parseInt(msiadata[i]['Recovered']),
+                dead: parseInt(msiadata[i]['Deaths']),
+                cases: parseInt(msiadata[i]['Confirmed'])
+            }
+            outputData.push(objToPush);
         }
         updateData(outputData);
     },[]);
@@ -63,7 +59,7 @@ function App() {
                             <img src={zixuLogo} alt="zixuLogo" draggable={false} style={{'height': '2.8rem','verticalAlign': 'middle','marginRight': '2rem'}}/>
                             <div style={{'display': 'inline-block','verticalAlign': 'middle'}}>
                                 <Text h4 style={{'fontFamily': 'Volte Bold', 'margin': '0'}}>AI Experiments</Text>
-                                <Text h5 style={{'margin': '0'}}>Malaysia nCoV-19 Cases Prediction</Text>
+                                <Text h5 style={{'margin': '0'}}>Malaysia nCoV-19 Cases Time Series Analysis</Text>
                             </div>
                         </div>
                     </div>
@@ -82,6 +78,8 @@ function App() {
                         <YAxis />
                         <Tooltip type="monotone" />
                         <Area type="monotone" dataKey="cases" stroke="#8884d8" fill="#8884d8" />
+                        <Area type="monotone" dataKey="recovered" stroke="#0070F3" fill="#3291FF" />
+                        <Area type="monotone" dataKey="dead" stroke="#7928CA" fill="#FF0080" />
                     </AreaChart>
                 </ResponsiveContainer>
             </section>

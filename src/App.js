@@ -3,6 +3,7 @@ import './App.css';
 import csv2json from 'csvjson-csv2json';
 import { AreaChart, Area, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import { Button, Modal, Text } from '@zeit-ui/react';
+import MobileBlock from "./components/mobileblock/mobileblock";
 import zixuLogo from './assets/zixuLogo.svg';
 import githubBtnIcon from './assets/githubBtnIcon.svg';
 import githubIcon from './assets/githubIcon.svg';
@@ -43,6 +44,7 @@ function App() {
 
     return (
         <div className="content">
+            <MobileBlock />
             <Modal open={modalState} onClose={closeHandler}>
                 <Modal.Title>Warning</Modal.Title>
                 <Modal.Content>

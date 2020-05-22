@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1933891e6134e616df8c2f869c882215",
+    "revision": "d8cd35c62541f6d05c16b72fa15539f3",
     "url": "/ncov19/index.html"
   },
   {
-    "revision": "892f6c98fd02769a4216",
+    "revision": "ac67d809489cc55d99d1",
     "url": "/ncov19/static/css/main.3714a02e.chunk.css"
   },
   {
-    "revision": "bd3410b16c9b74bf1176",
-    "url": "/ncov19/static/js/2.4a6d2ba6.chunk.js"
+    "revision": "4b8bb09159fce0d6d5b5",
+    "url": "/ncov19/static/js/2.8fc2be2d.chunk.js"
   },
   {
     "revision": "aa754ba9f73776ab5291549b6092b0f0",
-    "url": "/ncov19/static/js/2.4a6d2ba6.chunk.js.LICENSE.txt"
+    "url": "/ncov19/static/js/2.8fc2be2d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "892f6c98fd02769a4216",
-    "url": "/ncov19/static/js/main.0c7bbd4b.chunk.js"
+    "revision": "ac67d809489cc55d99d1",
+    "url": "/ncov19/static/js/main.3fe20b7e.chunk.js"
   },
   {
     "revision": "0a48f6335653dff52914",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f9bc636ad73c8b17ed85966a386582f4",
     "url": "/ncov19/static/media/githubIcon.f9bc636a.svg"
-  },
-  {
-    "revision": "65eb0388f95472ee540552cbb534c39a",
-    "url": "/ncov19/static/media/tensorflowIcon.65eb0388.svg"
   },
   {
     "revision": "64f746044496ab6b17f8b71fc4f14271",

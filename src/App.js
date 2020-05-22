@@ -5,7 +5,6 @@ import { AreaChart, Area, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tool
 import { Button, Modal, Text } from '@zeit-ui/react';
 import zixuLogo from './assets/zixuLogo.svg';
 import githubBtnIcon from './assets/githubBtnIcon.svg';
-import tensorflowIcon from './assets/tensorflowIcon.svg';
 import githubIcon from './assets/githubIcon.svg';
 import whoIcon from './assets/whoIcon.png';
 
@@ -94,7 +93,6 @@ function App() {
                         <div className="footer-contents">
                             <img src={whoIcon} alt="whoIcon" draggable={false} style={{'height': '3rem','marginRight': '1rem'}}/>
                             <img src={githubIcon} alt="githubIcon" draggable={false}/>
-                            <img src={tensorflowIcon} alt="tensorflowIcon" draggable={false}/>
                         </div>
                     </div>
                 </div>

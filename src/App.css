@@ -1,50 +1,77 @@
-.content {
+.base {
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    user-select: none;
+    text-align: center;
 }
 
 .header {
-    height: 7rem;
-}
-
-.header-grid, .footer-grid {
-    height: 100%;
-    width: 100%;
+    height: 6.5rem;
     display: grid;
     grid-template-columns: 50% 50%;
+    text-align: left;
 }
 
-.header-contents, .footer-contents {
+.header-1,.header-2 {
+    padding: 0 5rem;
+}
+
+.header-2 {
+    text-align: right;
+}
+
+.header-1-logo {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-1-logo img {
+    height: 2.5rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-1-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2rem;
+}
+
+.project-content {
+    height: calc(100% - 6.5rem);
+    width: calc(100% - 10rem);
+    display: inline-block;
+}
+
+.content {
+    height: calc(100% - 4rem);
+}
+
+.mobile-block {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.mobile-block-center {
     display: inline-block;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0 5rem;
 }
 
-.chart {
-    height: calc(80% - 7rem);
-    width: 90%;
-    display: inline-block;
-}
+@media only screen and (orientation: portrait) {
+    .mobile-block {
+        display: block;
+    }
 
-.recharts-tooltip-wrapper {
-    text-align: left;
-    color: black !important;
-}
-
-.footer {
-    height: 20%;
-    width: 100%;
-}
-
-.footer-contents img {
-    height: 4rem;
-    vertical-align: middle;
-}
-
-@font-face {
-    font-family: 'Volte Bold';
-    src: url('./assets/VolteBold.otf');
+    .header,.content {
+        display: none;
+    }
 }

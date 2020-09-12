@@ -1,0 +1,12 @@
+.chart {
+    height: 80%;
+    width: 90%;
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+
+.recharts-tooltip-wrapper {
+    text-align: left;
+    color: black !important;
+}

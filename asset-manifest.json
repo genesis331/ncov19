@@ -1,27 +1,24 @@
 {
   "files": {
-    "main.css": "/ncov19/static/css/main.69a52cd4.chunk.css",
-    "main.js": "/ncov19/static/js/main.364f528e.chunk.js",
-    "main.js.map": "/ncov19/static/js/main.364f528e.chunk.js.map",
-    "runtime-main.js": "/ncov19/static/js/runtime-main.cbd8125f.js",
-    "runtime-main.js.map": "/ncov19/static/js/runtime-main.cbd8125f.js.map",
-    "static/js/2.62c7ff0d.chunk.js": "/ncov19/static/js/2.62c7ff0d.chunk.js",
-    "static/js/2.62c7ff0d.chunk.js.map": "/ncov19/static/js/2.62c7ff0d.chunk.js.map",
+    "main.css": "/ncov19/static/css/main.3c59ad86.chunk.css",
+    "main.js": "/ncov19/static/js/main.c2f937b6.chunk.js",
+    "main.js.map": "/ncov19/static/js/main.c2f937b6.chunk.js.map",
+    "runtime-main.js": "/ncov19/static/js/runtime-main.ad793972.js",
+    "runtime-main.js.map": "/ncov19/static/js/runtime-main.ad793972.js.map",
+    "static/js/2.5cd380cb.chunk.js": "/ncov19/static/js/2.5cd380cb.chunk.js",
+    "static/js/2.5cd380cb.chunk.js.map": "/ncov19/static/js/2.5cd380cb.chunk.js.map",
     "index.html": "/ncov19/index.html",
-    "precache-manifest.88f08cd84216856b8e1446327d417d48.js": "/ncov19/precache-manifest.88f08cd84216856b8e1446327d417d48.js",
+    "precache-manifest.5da2203ba21370379f4fb66562298a5d.js": "/ncov19/precache-manifest.5da2203ba21370379f4fb66562298a5d.js",
     "service-worker.js": "/ncov19/service-worker.js",
-    "static/css/main.69a52cd4.chunk.css.map": "/ncov19/static/css/main.69a52cd4.chunk.css.map",
-    "static/js/2.62c7ff0d.chunk.js.LICENSE.txt": "/ncov19/static/js/2.62c7ff0d.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/ncov19/static/media/VolteBold.32ec5488.otf",
-    "static/media/githubBtnIcon.svg": "/ncov19/static/media/githubBtnIcon.92c90f33.svg",
-    "static/media/githubIcon.svg": "/ncov19/static/media/githubIcon.f9bc636a.svg",
-    "static/media/whoIcon.png": "/ncov19/static/media/whoIcon.64f74604.png",
-    "static/media/zixuLogo.svg": "/ncov19/static/media/zixuLogo.e0852cb2.svg"
+    "static/css/main.3c59ad86.chunk.css.map": "/ncov19/static/css/main.3c59ad86.chunk.css.map",
+    "static/js/2.5cd380cb.chunk.js.LICENSE.txt": "/ncov19/static/js/2.5cd380cb.chunk.js.LICENSE.txt",
+    "static/media/LOGO-BLACK-WEB.svg": "/ncov19/static/media/LOGO-BLACK-WEB.bc966552.svg",
+    "static/media/LOGO-WHITE-WEB.svg": "/ncov19/static/media/LOGO-WHITE-WEB.e0852cb2.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cbd8125f.js",
-    "static/js/2.62c7ff0d.chunk.js",
-    "static/css/main.69a52cd4.chunk.css",
-    "static/js/main.364f528e.chunk.js"
+    "static/js/runtime-main.ad793972.js",
+    "static/js/2.5cd380cb.chunk.js",
+    "static/css/main.3c59ad86.chunk.css",
+    "static/js/main.c2f937b6.chunk.js"
   ]
 }
